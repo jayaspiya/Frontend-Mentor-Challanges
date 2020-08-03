@@ -15,7 +15,7 @@ const generateProjectHtml = (challangeName) => {
   };
   const link = getImageName(challangeName);
   const html = `<div class="project">
-      <a href="./projects/${link}/index.html">
+      <a href="./projects/${link}/index.html" target="_blank" rel="noopener noreferrer">
         <img
           class="project__thumbnail"
           src="assets/thumbnail/${link}.jpg"
