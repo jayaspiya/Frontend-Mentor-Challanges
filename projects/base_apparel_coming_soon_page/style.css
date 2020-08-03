@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --DesaturatedRed: hsl(0, 36%, 70%);
+  --SoftRed: hsl(0, 93%, 68%);
+
+  --DarkGrayishRed: hsl(0, 6%, 24%);
+  --gradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+body {
+  background-color: #fff;
+  background-image: var(--gradient1);
+
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+}
+.wrapper {
+  width: 60vw;
+  height: 100vh;
+  padding-left: 200px;
+}
+.hero-desktop {
+  width: 40vw;
+  height: 100vh;
+}
+.header {
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+.message {
+  text-transform: uppercase;
+  font-size: 3.5em;
+  letter-spacing: 10px;
+}
+.first-part {
+  color: var(--DesaturatedRed);
+  font-weight: 300;
+}
+
+.second-part {
+  color: var(--DarkGrayishRed);
+}
+p {
+  color: var(--DesaturatedRed);
+  line-height: 25px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 0.9em;
+  font-weight: 600;
+  max-width: 400px;
+}
+input {
+  padding: 17px 20px;
+  border: none;
+  color: var(--DesaturatedRed);
+  background-color: transparent;
+
+  width: 100%;
+}
+.inputField {
+  width: 400px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  right: 0;
+  background: var(--gradient2);
+  padding: 15px 35px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.mobile-view {
+  display: none;
+  margin-bottom: 40px;
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    text-align: center;
+    padding: 0em;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .mobile-view {
+    display: block;
+  }
+  .hero-desktop {
+    display: none;
+  }
+  .inputField {
+    width: 100%;
+    margin: auto;
+  }
+  .header {
+    margin: 0;
+    padding: 15px;
+    text-align: left;
+  }
+  .message {
+    font-size: 2em;
+  }
+  p {
+    margin: auto;
+  }
+}
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+}

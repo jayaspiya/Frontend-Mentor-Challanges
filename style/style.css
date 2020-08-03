@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+header {
+  margin: 10px 25px;
+}
+
+header .subtitle {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.project-showcase {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  row-gap: 30px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.project {
+  margin: auto;
+  width: 350px;
+  height: 255px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project:hover .project__detail {
+  -webkit-clip-path: circle(150% at 100% 0%);
+          clip-path: circle(150% at 100% 0%);
+  background-color: #333;
+  opacity: 1;
+}
+
+.project:hover .project__detail__title::after {
+  opacity: 0;
+}
+
+.project__thumbnail {
+  width: 350px;
+}
+
+.project__detail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 500;
+  background-color: #444;
+  -webkit-clip-path: circle(10% at 100% 0%);
+          clip-path: circle(10% at 100% 0%);
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.project__detail a {
+  text-decoration: none;
+}
+
+.project__detail__title {
+  color: #f0f0f0;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  height: 255px;
+  width: 350px;
+  padding: 0 80px;
+}
+
+.project__detail__title .subtitle {
+  font-size: 0.9em;
+  color: #aaaaaa;
+}
+
+.project__detail__title::after {
+  content: "?";
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 0;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #aaaaaa;
+}
+/*# sourceMappingURL=style.css.map */

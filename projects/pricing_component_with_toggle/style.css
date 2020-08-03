@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --VeryLightGrayishBlue: hsl(240, 78%, 98%);
+  --LightGrayishBlue: hsl(234, 14%, 74%);
+  --GrayishBlue: hsl(233, 13%, 49%);
+  --DarkGrayishBlue: hsl(232, 13%, 33%);
+  --Gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+body {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+
+  background-color: var(--VeryLightGrayishBlue);
+}
+.wrapper {
+  position: relative;
+  height: 100vh;
+  user-select: none;
+}
+.inactive {
+  --pricing: var(--DarkGrayishBlue);
+  --main: var(--GrayishBlue);
+  --button: var(--Gradient);
+  --line: var(--LightGrayishBlue);
+  --border-color: hsl(237, 63%, 64%);
+  --btn-text: #fff;
+}
+.active {
+  --pricing: #fff;
+  --main: #fff;
+  --button: #fff;
+  --line: #fff;
+  --border-color: #fff;
+
+  --btn-text: hsl(237, 63%, 64%);
+}
+.title,
+.toggle {
+  text-align: center;
+}
+.title {
+  font-size: 1.8em;
+  color: var(--GrayishBlue);
+  padding-top: 50px;
+}
+.toggle {
+  display: flex;
+  justify-content: center;
+  color: var(--LightGrayishBlue);
+  margin-top: 30px;
+}
+.flexview {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 40px 0;
+  margin-bottom: 0;
+  align-items: center;
+}
+.flex-price {
+  font-size: 3.5em;
+  padding-bottom: 20px;
+  color: var(--pricing);
+}
+.flex-title {
+  padding: 30px 0;
+}
+
+.flex-price::before {
+  content: "$ ";
+  font-size: 0.6em;
+  vertical-align: middle;
+  color: var(--pricing);
+}
+.flex-item {
+  color: var(--main);
+  background-color: #fff;
+  border-radius: 10px;
+  width: 280px;
+  height: 345px;
+  padding: 0 35px;
+  margin: 20px 0;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.02);
+}
+.flex-storage,
+.flex-sendup-limit {
+  border-top: 0.5px solid var(--line);
+  border-bottom: 0.5px solid var(--line);
+}
+.flex-active {
+  color: #fff;
+  box-shadow: none;
+  z-index: 1;
+  background-color: transparent;
+  --LightGrayishBlue: #fff;
+}
+.flex-button {
+  border-radius: 5px;
+  padding: 7px 0;
+  margin: 30px 0;
+  background: var(--button);
+  color: var(--btn-text);
+  text-transform: uppercase;
+  font-size: 0.8em;
+  cursor: pointer;
+  border: 1px solid white;
+  transition: color 0.25s ease-out;
+}
+
+.flex-button:hover {
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--border-color);
+}
+.flex-storage,
+.flex-sendup-limit,
+.flex-users-limit {
+  padding: 5px 0;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.top {
+  position: absolute;
+  height: 80vh;
+  top: 0;
+  right: 0;
+}
+
+.top,
+.bottom {
+  z-index: -1;
+}
+.flex-middle {
+  background-image: var(--Gradient);
+  border-radius: 10px;
+}
+.toggler {
+  margin: 0 10px;
+  padding: 2px;
+  height: 24px;
+  width: 45px;
+  border-radius: 30px;
+
+  background: var(--Gradient);
+  cursor: pointer;
+}
+.toggler-circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+@media screen and (max-width: 860px) {
+  .wrapper {
+    height: 100%;
+  }
+  .flexview {
+    display: flex;
+    flex-direction: column;
+  }
+}

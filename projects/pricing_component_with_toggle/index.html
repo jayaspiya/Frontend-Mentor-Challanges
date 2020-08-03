@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Price Component with toggle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">
+        Our Pricing
+      </div>
+      <div class="toggle">
+        <div>
+          Annually
+        </div>
+        <div class="toggler">
+          <div class="toggler-circle"></div>
+        </div>
+        <div>
+          Monthly
+        </div>
+      </div>
+      <div class="flexview">
+        <div class="flex-item inactive">
+          <div class="flex-title">
+            Basic
+          </div>
+          <div class="flex-price" id="pricing1">
+            199.99
+          </div>
+          <div class="flex-storage">
+            500 GB Storage
+          </div>
+          <div class="flex-users-limit">
+            2 Users Allowed
+          </div>
+          <div class="flex-sendup-limit">
+            Send up to 3 GB
+          </div>
+          <div class="flex-button">
+            Learn More
+          </div>
+        </div>
+        <div class="flex-middle">
+          <div class="flex-item flex-active active">
+            <div class="flex-title">
+              Professional
+            </div>
+            <div class="flex-price" id="pricing2">
+              249.99
+            </div>
+            <div class="flex-storage">
+              1 TB Storage
+            </div>
+            <div class="flex-users-limit">
+              5 Users Allowed
+            </div>
+            <div class="flex-sendup-limit">
+              Send up to 10 GB
+            </div>
+            <div class="flex-button">
+              Learn More
+            </div>
+          </div>
+        </div>
+        <div class="flex-item inactive">
+          <div class="flex-title">
+            Master
+          </div>
+          <div class="flex-price" id="pricing3">
+            399.99
+          </div>
+          <div class="flex-storage">
+            2 TB Storage
+          </div>
+          <div class="flex-users-limit">
+            10 Users Allowed
+          </div>
+          <div class="flex-sendup-limit">
+            Send up to 20 GB
+          </div>
+          <div class="flex-button">
+            Learn More
+          </div>
+        </div>
+      </div>
+      <img class="bottom" src="images/bg-bottom.svg" alt="bg-bottom" />
+      <img class="top" src="images/bg-top.svg" alt="bg-top" />
+    </div>
+    <script defer src="app.js"></script>
+  </body>
+</html>

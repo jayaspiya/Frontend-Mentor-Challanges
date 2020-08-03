@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap"
+            rel="stylesheet"
+        />
+        <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="overlay" id="overlay">
+                <div class="rules-popup">
+                    <div class="pop-up">
+                        <div>Rules</div>
+                        <div>
+                            <img src="images/icon-close.svg" id="close" />
+                        </div>
+                    </div>
+                    <img src="images/image-rules.svg" alt="" />
+                </div>
+            </div>
+            <center>
+                <div class="scoreboard">
+                    <img src="images/logo.svg" alt="" />
+                    <div class="scorecard">
+                        Score
+                        <div class="scorepoints" id="scorepoints">
+                            0
+                        </div>
+                    </div>
+                </div>
+            </center>
+            <div class="rules" id="rules">
+                Rules
+            </div>
+            <div class="playground-pick" id="playground-pick">
+                <center>
+                    <img class="triangle" src="images/bg-triangle.svg" />
+                </center>
+                <div>
+                    <div class="img-holder paper" onclick="pick(1)">
+                        <img src="images/icon-paper.svg" />
+                    </div>
+                    <div class="img-holder scissors" onclick="pick(2)">
+                        <img src="images/icon-scissors.svg" />
+                    </div>
+                    <div class="img-holder rock" onclick="pick(3)">
+                        <img src="images/icon-rock.svg" />
+                    </div>
+                </div>
+            </div>
+            <div class="playground" id="playground">
+                <div class="players">
+                    <div class="player1">
+                        <div class="label-player">
+                            You Picked
+                        </div>
+                        <center>
+                            <!-- <div class="playerpick" id="playerpick1"></div> -->
+                            <div id="playerpick1"></div>
+                        </center>
+                    </div>
+                    <div class="player2">
+                        <div class="label-player">
+                            The House Picked
+                        </div>
+                        <center>
+                            <div class="playerpick" id="playerpick2"></div>
+                        </center>
+                    </div>
+                </div>
+                <div class="grid-center">
+                    <div class="message" id="message">
+                        <div class="txtMessage" id="txtMessage">
+                            You Win
+                        </div>
+                        <div class="btnRestart" id="btnRestart">
+                            Play Again
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Your Name Here</a>.
+        </div> -->
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | [Challenge Name Here]</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body class="dark">
+        <div class="header-bg"></div>
+
+        <div class="wrapper">
+            <header>
+                <div class="headline">
+                    <div class="header__headline">
+                        <div class="header__headline__title">
+                            Social Media Dashboard
+                        </div>
+                        <div class="header__headline__subtitle">
+                            Total Followers: 23,004
+                        </div>
+                    </div>
+                    <div class="header__toggler">
+                        <div>
+                            Dark Mode
+                        </div>
+                        <div class="toggler" id="toggler">
+                            <div
+                                id="toggler-circle"
+                                class="toggler-circle"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-center">
+                    <div class="socialMedias">
+                        <div class="socialMedias__card">
+                            <div class="socialmedia">
+                                <span class="socialMedias__card__icon">
+                                    <img src="images/icon-facebook.svg" alt=""
+                                /></span>
+                                <span class="socialMedias__card__username">
+                                    @nathanf
+                                </span>
+                            </div>
+                            <div class="rateNumber">
+                                <div class="socialMedias__card__followerNumber">
+                                    1987
+                                </div>
+                                <div>
+                                    Followers
+                                </div>
+                            </div>
+                            <div class="socialMedias__card__update">
+                                <div class="update__svg"></div>
+                                <span class="up_down_img">
+                                    <img src="images/icon-up.svg" alt="" />
+                                </span>
+                                <span class="overall_change">
+                                    12 Today
+                                </span>
+                            </div>
+                        </div>
+                        <div class="socialMedias__card">
+                            <div class="socialmedia">
+                                <span class="socialMedias__card__icon">
+                                    <img src="images/icon-twitter.svg" alt="" />
+                                </span>
+                                <span class="socialMedias__card__username">
+                                    @nathanf
+                                </span>
+                            </div>
+                            <div class="rateNumber">
+                                <div class="socialMedias__card__followerNumber">
+                                    1044
+                                </div>
+                                <div>
+                                    Followers
+                                </div>
+                            </div>
+                            <div class="socialMedias__card__update">
+                                <div class="update__svg"></div>
+                                <span class="up_down_img">
+                                    <img src="images/icon-up.svg" alt="" />
+                                </span>
+                                <span class="overall_change">
+                                    99 Today
+                                </span>
+                            </div>
+                        </div>
+                        <div class="socialMedias__card">
+                            <div class="gradient"></div>
+                            <div class="placepadding">
+                                <div class="socialmedia">
+                                    <span class="socialMedias__card__icon">
+                                        <img
+                                            src="images/icon-instagram.svg"
+                                            alt=""
+                                        />
+                                    </span>
+                                    <span class="socialMedias__card__username">
+                                        @realnathanf
+                                    </span>
+                                </div>
+                                <div class="rateNumber">
+                                    <div
+                                        class="socialMedias__card__followerNumber"
+                                    >
+                                        11k
+                                    </div>
+                                    <div>
+                                        Followers
+                                    </div>
+                                </div>
+                                <div class="socialMedias__card__update">
+                                    <div class="update__svg"></div>
+                                    <span class="up_down_img">
+                                        <img src="images/icon-up.svg" alt="" />
+                                    </span>
+                                    <span class="overall_change">
+                                        1099 Today
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="socialMedias__card">
+                            <div class="socialmedia">
+                                <span class="socialMedias__card__icon">
+                                    <img src="images/icon-youtube.svg" alt="" />
+                                </span>
+                                <span class="socialMedias__card__username">
+                                    Nathan F.
+                                </span>
+                            </div>
+                            <div class="rateNumber">
+                                <div class="socialMedias__card__followerNumber">
+                                    8239
+                                </div>
+                                <div>
+                                    Subscribers
+                                </div>
+                            </div>
+                            <div class="socialMedias__card__update">
+                                <div class="update__svg"></div>
+                                <span class="up_down_img">
+                                    <img src="images/icon-down.svg" alt="" />
+                                </span>
+                                <span class="overall_change__neg">
+                                    144 Today
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="title">
+                Overview - Today
+            </div>
+            <div class="grid-view">
+                <div class="grid-view__card__grid">
+                    <div class="subtitle">
+                        Page Views
+                    </div>
+                    <div class="grid__icon">
+                        <img src="images/icon-facebook.svg" alt="" />
+                    </div>
+                    <div class="todays__number">
+                        87
+                    </div>
+                    <div class="todays__percentageChange">
+                        <span class="up_down_img">
+                            <img src="images/icon-up.svg" alt="" /> </span
+                        >3%
+                    </div>
+                </div>
+                <div class="grid-view__card__grid">
+                    <div class="subtitle">
+                        Likes
+                    </div>
+                    <div class="grid__icon">
+                        <img src="images/icon-facebook.svg" alt="" />
+                    </div>
+                    <div class="todays__number">
+                        52
+                    </div>
+                    <div class="todays__percentageChange__neg">
+                        <span class="up_down_img">
+                            <img src="images/icon-down.svg" alt="" />
+                        </span>
+                        2%
+                    </div>
+                </div>
+                <div class="grid-view__card__grid">
+                    <div class="subtitle">
+                        Likes
+                    </div>
+                    <div class="grid__icon">
+                        <img src="images/icon-instagram.svg" alt="" />
+                    </div>
+                    <div class="todays__number">
+                        5462
+                    </div>
+                    <div class="todays__percentageChange">
+                        <span class="up_down_img">
+                            <img src="images/icon-up.svg" alt="" /> </span
+                        >2257%
+                    </div>
+                </div>
+                <div class="grid-view__card__grid">
+                    <div class="subtitle">
+                        Profile Views
+                    </div>
+                    <div class="grid__icon">
+                        <img src="images/icon-instagram.svg" alt="" />
+                    </div>
+                    <div class="todays__number">
+                        52k
+                    </div>
+                    <div class="todays__percentageChange">
+                        <span class="up_down_img">
+                            <img src="images/icon-up.svg" alt="" /> </span
+                        >1375%
+                    </div>
+                </div>
+                <div class="grid-view__card__grid">
+                    <div class="subtitle">
+                        Retweets
+                    </div>
+                    <div class="grid__icon">
+                        <img src="images/icon-twitter.svg" alt="" />
+                    </div>
+                    <div class="todays__number">
+                        117
+                    </div>
+                    <div class="todays__percentageChange">
+                        <span class="up_down_img">
+                            <img src="images/icon-up.svg" alt="" /> </span
+                        >303%
+                    </div>
+                </div>
+                <div class="grid-view__card__grid">
+                    <div class="subtitle">
+                        Likes
+                    </div>
+                    <div class="grid__icon">
+                        <img src="images/icon-twitter.svg" alt="" />
+                    </div>
+                    <div class="todays__number">
+                        507
+                    </div>
+                    <div class="todays__percentageChange">
+                        <span class="up_down_img">
+                            <img src="images/icon-up.svg" alt="" /> </span
+                        >553%
+                    </div>
+                </div>
+                <div class="grid-view__card__grid">
+                    <div class="subtitle">
+                        Likes
+                    </div>
+                    <div class="grid__icon">
+                        <img src="images/icon-youtube.svg" alt="" />
+                    </div>
+                    <div class="todays__number">
+                        107
+                    </div>
+                    <div class="todays__percentageChange__neg">
+                        <span class="up_down_img">
+                            <img src="images/icon-down.svg" alt="" /> </span
+                        >19%
+                    </div>
+                </div>
+                <div class="grid-view__card__grid">
+                    <div class="subtitle">
+                        Total Views
+                    </div>
+                    <div class="grid__icon">
+                        <img src="images/icon-youtube.svg" alt="" />
+                    </div>
+                    <div class="todays__number">
+                        1407
+                    </div>
+                    <div class="todays__percentageChange__neg">
+                        <span class="up_down_img">
+                            <img src="images/icon-down.svg" alt="" /> </span
+                        >12%
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                rel="noopener noreferrer"
+                target="_blank"
+                >Frontend Mentor</a
+            >
+            Dev
+            <a
+                href="https://github.com/zayazzp"
+                rel="noopener noreferrer"
+                target="_blank"
+                >Jayas Piya</a
+            >.
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
