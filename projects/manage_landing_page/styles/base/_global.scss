@@ -1,0 +1,82 @@
+body {
+  font-family: "Be Vietnam", sans-serif;
+  font-weight: $medium;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  @include desktop-view {
+    margin: 3rem 0;
+  }
+  button {
+    display: none;
+    @include desktop-view {
+      display: inline;
+    }
+  }
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: $DarkGrayishBlue;
+  font-weight: $bold;
+  padding: 0.5rem 0;
+  @include desktop-view {
+    padding: 1rem 0;
+  }
+}
+h1,
+h2 {
+  color: $DarkBlue;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  @include desktop-view {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    text-align: left;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  @include desktop-view {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-align: left;
+  }
+}
+section {
+  margin-bottom: 3rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+footer {
+  background: $VeryDarkBlue;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+  padding: 3rem;
+  position: relative;
+  @include desktop-view {
+    flex-direction: row;
+    height: auto;
+  }
+}

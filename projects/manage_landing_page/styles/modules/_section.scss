@@ -1,0 +1,31 @@
+.section {
+  @include desktop-view {
+    display: flex;
+    flex-direction: row;
+    & > div {
+      width: 50%;
+      & > p {
+        margin-right: 30%;
+      }
+    }
+  }
+  div {
+    @include desktop-view {
+      padding: 1rem 0;
+    }
+    p {
+      font-size: 1.05rem;
+      padding: 1.5rem 0;
+      @include desktop-view {
+        padding: 2.5rem 0;
+      }
+    }
+  }
+  &-sm-reverse-col {
+    display: flex;
+    flex-direction: column-reverse;
+    @include desktop-view {
+      flex-direction: row;
+    }
+  }
+}

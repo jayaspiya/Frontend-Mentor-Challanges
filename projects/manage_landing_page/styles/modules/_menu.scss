@@ -1,0 +1,11 @@
+.menu {
+  cursor: pointer;
+  display: inline;
+  z-index: 3;
+  @include desktop-view {
+    display: none;
+  }
+  &--hide {
+    display: none;
+  }
+}

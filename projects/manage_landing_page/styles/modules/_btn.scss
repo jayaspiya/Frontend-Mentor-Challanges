@@ -1,0 +1,16 @@
+.btn {
+  font-weight: $bolder;
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  &-brightred {
+    background: $BrightRed;
+    color: $VaryLightGray;
+  }
+  &--varylightgray {
+    color: $BrightRed;
+    background-color: $VaryLightGray;
+  }
+}

@@ -1,0 +1,8 @@
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include desktop-view {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,22 @@
+.feature {
+  padding: 2rem 0;
+  & > div {
+    // margin-top: 2rem;
+  }
+  &-index {
+    font-weight: $bolder;
+    padding: 0.2rem 1rem;
+    border-radius: 30px;
+    background: $BrightRed;
+    color: $VaryLightGray;
+  }
+  &-title {
+    font-weight: $bolder;
+    color: $DarkBlue;
+  }
+  p {
+    @include desktop-view {
+      margin-left: 50px;
+    }
+  }
+}

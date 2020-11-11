@@ -1,0 +1,65 @@
+.footer {
+  &__social-media {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    @include desktop-view {
+      flex-direction: column;
+    }
+    &__links {
+      img {
+        width: auto;
+      }
+      white-space: nowrap;
+      width: 280px;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+      margin: 40px 0;
+      @include desktop-view {
+        width: initial;
+        height: initial;
+        margin: 0;
+        display: inline;
+      }
+    }
+  }
+  &__links {
+    display: flex;
+    padding-top: 20px;
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      color: #fff;
+      line-height: 2rem;
+      padding: 0 2rem;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    input[type="text"] {
+      padding: 0.9rem 1.8rem;
+      border-radius: 30px;
+      outline: none;
+      border: none;
+      font-weight: $bold;
+    }
+    &__copyright {
+      color: $DarkGrayishBlue;
+      font-size: 0.8rem;
+      float: right;
+      position: absolute;
+      bottom: 10px;
+      padding: 0 55px;
+      @include desktop-view {
+        position: static;
+        padding: 0;
+      }
+    }
+  }
+}
